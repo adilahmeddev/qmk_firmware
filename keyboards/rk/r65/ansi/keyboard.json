@@ -24,6 +24,7 @@
     },
     "features": {
         "bootmagic": true,
+        "extrakey": true,
         "command": true,
         "encoder": true,
         "mousekey": true,
