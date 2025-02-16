@@ -185,14 +185,11 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
                 layer_move(_MAC);
             }
             break;
-        case OS_WINDOWS:
+        default:
             rgb_matrix_set_color(guiKey, RGB_BLUE);
             if (!(IS_LAYER_ON(_BASE) || IS_LAYER_ON(_BASE_FN))) {
                 layer_move(_BASE);
             }
-            break;
-        default:
-            rgb_matrix_set_color(guiKey, RGB_RED);
             break;
     }
     return false;
